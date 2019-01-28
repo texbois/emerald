@@ -32,6 +32,7 @@
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.LineChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.ChartTypeList = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.LineChart)).BeginInit();
             this.SuspendLayout();
             // 
@@ -41,20 +42,31 @@
             this.LineChart.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.LineChart.Legends.Add(legend1);
-            this.LineChart.Location = new System.Drawing.Point(12, 12);
+            this.LineChart.Location = new System.Drawing.Point(12, -1);
             this.LineChart.Name = "LineChart";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.LineChart.Series.Add(series1);
-            this.LineChart.Size = new System.Drawing.Size(991, 545);
+            this.LineChart.Size = new System.Drawing.Size(835, 547);
             this.LineChart.TabIndex = 0;
+            this.LineChart.Text = "chart1";
+            // 
+            // ChartTypeList
+            // 
+            this.ChartTypeList.FormattingEnabled = true;
+            this.ChartTypeList.Location = new System.Drawing.Point(853, 12);
+            this.ChartTypeList.Name = "ChartTypeList";
+            this.ChartTypeList.Size = new System.Drawing.Size(146, 524);
+            this.ChartTypeList.TabIndex = 1;
+            this.ChartTypeList.SelectedValueChanged += new System.EventHandler(this.ChartTypeList_SelectedValueChanged);
             // 
             // LineForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1002, 558);
+            this.Controls.Add(this.ChartTypeList);
             this.Controls.Add(this.LineChart);
             this.Name = "LineForm";
             this.Text = "LineForm";
@@ -66,5 +78,6 @@
         #endregion
 
         private System.Windows.Forms.DataVisualization.Charting.Chart LineChart;
+        private System.Windows.Forms.ListBox ChartTypeList;
     }
 }

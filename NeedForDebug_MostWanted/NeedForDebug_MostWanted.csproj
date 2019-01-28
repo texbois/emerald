@@ -51,7 +51,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\VisualLine\VisualLine\VisualLine.csproj">
+    <ProjectReference Include="..\VisualLine\VisualLine.csproj">
       <Project>{abc1f859-fa72-4154-a906-f0ead2cbd2a8}</Project>
       <Name>VisualLine</Name>
     </ProjectReference>
