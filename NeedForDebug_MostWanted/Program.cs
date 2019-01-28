@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using VisualLine;
 
 namespace NeedForDebug_MostWanted
 {
@@ -17,8 +12,6 @@ namespace NeedForDebug_MostWanted
                 test[i, 0] = -5 + (i * 0.2);
                 test[i, 1] = test[i, 0] * test[i, 0] + test[i, 0];
             }
-            DebuggerSide.Test(test);
-            Console.WriteLine("Hell User!");
             Console.Read();
         }
     }

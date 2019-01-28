@@ -9,8 +9,8 @@ using System.Windows.Forms;
 [assembly: System.Diagnostics.DebuggerVisualizer(
     typeof(VisualLine.DebuggerSide),
     typeof(VisualizerObjectSource),
-    Target = typeof(System.String),
-    Description = "Hello folks!")]
+    Target = typeof(double[,]),
+    Description = "Plot")]
 
 namespace VisualLine
 {
